@@ -1,0 +1,60 @@
+.sidenav-component-container {
+  width: 100%;
+}
+md-sidenav-container .mat-sidenav-content {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.mat-sidenav-content {
+  display: block;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+  transform: translate3d(0,0,0);
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+.app-content {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.wx-sidenav {
+  width: 10em;
+}
+.wx-sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.wx-sidenav li {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: rgba(0, 0, 0, 0.06);
+  margin: 0;
+  padding: 0;
+}
+.wx-sidenav li>a {
+  color: gainsboro;
+  box-sizing: border-box;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 47px;
+  text-decoration: none;
+  transition: all .3s;
+  padding: 0 16px;
+  position: relative;
+  cursor: auto;
+}
+.wx-sidenav li>a.wx-sidenav-link-active {
+  font-weight: 600;
+}

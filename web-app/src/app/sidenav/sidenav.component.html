@@ -1,0 +1,12 @@
+<md-sidenav-container class="sidenav-component-container">
+  <md-sidenav #sidenav class="wx-sidenav">
+      <ul>
+        <li *ngFor="let nav of sideNameItems">
+          <a routerLinkActive="wx-sidenav-link-active" routerLink="{{nav.link}}">{{nav.name}}</a>
+        </li>
+      </ul>
+  </md-sidenav>
+  <div class="app-content app-content-layout">
+        <router-outlet></router-outlet>
+  </div>
+</md-sidenav-container>
